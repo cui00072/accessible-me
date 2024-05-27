@@ -21,19 +21,19 @@
 
   <div class="container">
     <header class="site-header" role="banner">
-      <h1 aria-level="1">Jam Box Studios</h1>
+      <h1 role="heading">Jam Box Studios</h1>
       <nav class="main-nav" id="nav" role="navigation" aria-label="Main Navigation">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Reservation</a></li>
-          <li><a href="#">Studio</a></li>
+        <ul role="menubar">
+          <li><a href="#" role="menuitem">Home</a></li>
+          <li><a href="#" role="menuitem">Products</a></li>
+          <li><a href="#" role="menuitem">Reservation</a></li>
+          <li><a href="#" role="menuitem">Studio</a></li>
         </ul>
       </nav>
       <img src="https://placekitten.com/1200/900" alt="Cute kitten" class="banner">
     </header>
-    <main role="main" class="main-content" id="main" itemprop="mainContentOfPage">
-      <section>
+    <main role="main" class="main-content" id="main" itemscope itemtype="https://schema.org/WebPageElement">
+      <section itemprop="mainContentOfPage">
         <h2>Welcome to Jam Box</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
@@ -60,7 +60,7 @@
       <section class="contact-section">
         <h2>Contact Us</h2>
         <form action="thanks.html">
-          <label for="name">Full Name</label>
+          <label for="full-name">Full Name</label>
           <input type="text" id="full-name" placeholder="Full Name">
           
           <label for="email">Email</label>
@@ -71,15 +71,14 @@
           
           <b>Your Message</b>
           <textarea></textarea>
-          
           <button type="submit">Send</button>
         </form>
       </section>
     </main>
-    <footer class="site-footer" role="contentinfo">
-      &copy; 2021 Jam Box Studios
-      <span itemprop="copyrightYear">2021</span> <span itemprop="publisher">Jam Box Studios</span>
+    <footer class="site-footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+      &copy; <span itemprop="copyrightYear">2021</span> <span itemprop="publisher">Jam Box Studios</span>
     </footer>
+
   </div>
 </body>
 
